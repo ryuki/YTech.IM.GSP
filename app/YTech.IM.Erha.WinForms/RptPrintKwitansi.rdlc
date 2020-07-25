@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="YTechIMParamitaWebControllersViewModelReports">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>61e2476b-d8cf-4e06-aa48-e8d1ecb92dcd</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="CashJournalViewModel">
+      <Fields>
+        <Field Name="AccountId">
+          <DataField>AccountId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AccountName">
+          <DataField>AccountName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CostCenterId">
+          <DataField>CostCenterId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CostCenterName">
+          <DataField>CostCenterName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CreatedBy">
+          <DataField>CreatedBy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CreatedDate">
+          <DataField>CreatedDate</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="DataStatus">
+          <DataField>DataStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DetAccountId">
+          <DataField>DetAccountId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DetAccountName">
+          <DataField>DetAccountName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalDate">
+          <DataField>JournalDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalDetAmmount">
+          <DataField>JournalDetAmmount</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="JournalDetDesc">
+          <DataField>JournalDetDesc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalDetEvidenceNo">
+          <DataField>JournalDetEvidenceNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalDetNo">
+          <DataField>JournalDetNo</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="JournalDetStatus">
+          <DataField>JournalDetStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalId">
+          <DataField>JournalId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalPic">
+          <DataField>JournalPic</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalType">
+          <DataField>JournalType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JournalVoucherNo">
+          <DataField>JournalVoucherNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ModifiedBy">
+          <DataField>ModifiedBy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ModifiedDate">
+          <DataField>ModifiedDate</DataField>
+          <rd:TypeName>System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="RowVersion">
+          <DataField>RowVersion</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>YTechIMParamitaWebControllersViewModelReports</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>YTech.IM.Paramita.Web.Controllers.ViewModel.Reports</rd:DataSetName>
+        <rd:TableName>CashJournalViewModel</rd:TableName>
+        <rd:ObjectDataSourceType>YTech.IM.Paramita.Web.Controllers.ViewModel.Reports.CashJournalViewModel, YTech.IM.Paramita.Web.Controllers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>8.22957in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>3.56145in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle1">
+                      <ReportItems>
+                        <Textbox Name="JournalVoucherNo">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!JournalVoucherNo.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>JournalVoucherNo</rd:DefaultName>
+                          <Top>0.91948in</Top>
+                          <Left>0.45236in</Left>
+                          <Height>0.25in</Height>
+                          <Width>6.69759in</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox8">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>No</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox8</rd:DefaultName>
+                          <Top>0.91948in</Top>
+                          <Left>0.02083in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.38986in</Width>
+                          <ZIndex>1</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="DetAccountId1">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="Pekanbaru," &amp; format(First(Fields!JournalDate.Value),"dd MMMM yyyy")</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>DetAccountId1</rd:DefaultName>
+                          <Top>2.68101in</Top>
+                          <Left>4.1549in</Left>
+                          <Height>0.25in</Height>
+                          <Width>3.01588in</Width>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox10">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>GSP Clinic</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>14pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox10</rd:DefaultName>
+                          <Top>0.00393in</Top>
+                          <Left>1.93624in</Left>
+                          <Height>0.34375in</Height>
+                          <Width>5.21371in</Width>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox12">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Sudah Terima dari :</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <Top>1.26671in</Top>
+                          <Left>0.02083in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.66949in</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="JournalPic">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!JournalPic.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>JournalPic</rd:DefaultName>
+                          <Top>1.26671in</Top>
+                          <Left>1.76641in</Left>
+                          <Height>0.25in</Height>
+                          <Width>5.40437in</Width>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Image Name="Image2">
+                          <Source>Embedded</Source>
+                          <Value>logo_bw</Value>
+                          <Sizing>FitProportional</Sizing>
+                          <Top>0.00393in</Top>
+                          <Left>0.03789in</Left>
+                          <Height>0.84611in</Height>
+                          <Width>1.8289in</Width>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Image>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Banyaknya Uang :</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <Top>1.5306in</Top>
+                          <Left>0.02083in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.66949in</Width>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="JournalPic2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Code.GetNumericSaid(Sum(Fields!JournalDetAmmount.Value)).ToString().Trim &amp; " Rupiah"</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>JournalPic</rd:DefaultName>
+                          <Top>1.50629in</Top>
+                          <Left>1.76641in</Left>
+                          <Height>0.25in</Height>
+                          <Width>5.40437in</Width>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Untuk Pembayaran :</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <Top>1.99948in</Top>
+                          <Left>0.02083in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.66949in</Width>
+                          <ZIndex>9</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox15">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="Jumlah Rp." &amp; format(Sum(Fields!JournalDetAmmount.Value),"N2")</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <Top>3.15573in</Top>
+                          <Left>0.1465in</Left>
+                          <Height>0.25in</Height>
+                          <Width>2.36016in</Width>
+                          <ZIndex>10</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="JournalVoucherNo2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Jl. Gatot Subroto No. 36D </Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Telp. (0761) 856078 - 888890</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Pekanbaru</Value>
+                                  <Style>
+                                    <FontFamily>Verdana</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>JournalVoucherNo</rd:DefaultName>
+                          <Top>0.34768in</Top>
+                          <Left>1.93624in</Left>
+                          <Height>0.50236in</Height>
+                          <Width>5.22096in</Width>
+                          <ZIndex>11</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Tablix Name="Tablix1">
+                          <TablixBody>
+                            <TablixColumns>
+                              <TablixColumn>
+                                <Width>5.40437in</Width>
+                              </TablixColumn>
+                            </TablixColumns>
+                            <TablixRows>
+                              <TablixRow>
+                                <Height>0.25in</Height>
+                                <TablixCells>
+                                  <TablixCell>
+                                    <CellContents>
+                                      <Textbox Name="JournalDetDesc1">
+                                        <CanGrow>true</CanGrow>
+                                        <KeepTogether>true</KeepTogether>
+                                        <Paragraphs>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value>=Fields!JournalDetDesc.Value</Value>
+                                                <Style>
+                                                  <FontFamily>Verdana</FontFamily>
+                                                  <FontSize>11pt</FontSize>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                        </Paragraphs>
+                                        <rd:DefaultName>JournalDetDesc1</rd:DefaultName>
+                                        <Style>
+                                          <Border>
+                                            <Style>None</Style>
+                                          </Border>
+                                          <PaddingLeft>2pt</PaddingLeft>
+                                          <PaddingRight>2pt</PaddingRight>
+                                          <PaddingTop>2pt</PaddingTop>
+                                          <PaddingBottom>2pt</PaddingBottom>
+                                        </Style>
+                                      </Textbox>
+                                    </CellContents>
+                                  </TablixCell>
+                                </TablixCells>
+                              </TablixRow>
+                            </TablixRows>
+                          </TablixBody>
+                          <TablixColumnHierarchy>
+                            <TablixMembers>
+                              <TablixMember />
+                            </TablixMembers>
+                          </TablixColumnHierarchy>
+                          <TablixRowHierarchy>
+                            <TablixMembers>
+                              <TablixMember>
+                                <Group Name="Details" />
+                              </TablixMember>
+                            </TablixMembers>
+                          </TablixRowHierarchy>
+                          <DataSetName>CashJournalViewModel</DataSetName>
+                          <Top>1.99948in</Top>
+                          <Left>1.76641in</Left>
+                          <Height>0.25in</Height>
+                          <Width>5.40437in</Width>
+                          <ZIndex>12</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Tablix>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!JournalId.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>CashJournalViewModel</DataSetName>
+        <Top>0.12717in</Top>
+        <Left>0.375in</Left>
+        <Height>3.56145in</Height>
+        <Width>8.22957in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>3.88614in</Height>
+    <Style />
+  </Body>
+  <Code>Public Shared Function GetNumericSaid(ByVal num As Decimal) As String
+
+Dim x = Math.Abs(num)
+
+Dim temp = ""
+If x &lt; 12 Then
+	temp = " " + angka(Math.floor(x))
+ElseIf x &lt; 20 Then
+	temp = GetNumericSaid(x - 10) &amp; " Belas"
+ElseIf x &lt; 100 Then
+	temp = GetNumericSaid(x / 10) &amp; " Puluh" &amp; GetNumericSaid(x Mod 10)
+ElseIf x &lt; 200 Then
+	temp = " Seratus" &amp; GetNumericSaid(x - 100)
+ElseIf x &lt; 1000 Then
+	temp = GetNumericSaid(x / 100) &amp; " Ratus" &amp; GetNumericSaid(x Mod 100)
+ElseIf x &lt; 2000 Then
+	temp = " Seribu" &amp; GetNumericSaid(x - 1000)
+ElseIf x &lt; 1000000 Then
+	temp = GetNumericSaid(x / 1000) &amp; " Ribu" &amp; GetNumericSaid(x Mod 1000)
+ElseIf x &lt; 1000000000 Then
+	temp = GetNumericSaid(x / 1000000) &amp; " Juta" &amp; GetNumericSaid(x Mod 1000000)
+ElseIf x &lt; 1000000000000L Then
+	temp = GetNumericSaid(x / 1000000000) &amp; " Milyar" &amp; GetNumericSaid(x Mod 1000000000)
+ElseIf x &lt; 1000000000000000L Then
+	temp = GetNumericSaid(x / 1000000000000L) &amp; " Trilyun" &amp; GetNumericSaid(x Mod 1000000000000L)
+End If
+Return temp
+End Function
+
+Public Shared Function angka(ByVal index As Integer) As String
+Dim said As String 
+Select Case index
+	Case 1
+	said = "Satu"
+	Case 2
+	said = "Dua"
+	Case 3
+	said = "Tiga"
+	Case 4
+	said = "Empat"
+	Case 5
+	said = "Lima"
+	Case 6
+	said = "Enam"
+	Case 7
+	said = "Tujuh"
+	Case 8
+	said = "Delapan"
+	Case 9
+	said = "Sembilan"
+	Case 10
+	said = "Sepuluh"
+	Case 11
+	said = "Sebelas"
+End Select
+Return said
+End Function
+</Code>
+  <Width>9.52123in</Width>
+  <Page>
+    <PageHeight>5.5in</PageHeight>
+    <PageWidth>9.5in</PageWidth>
+    <LeftMargin>0.1in</LeftMargin>
+    <RightMargin>0.1in</RightMargin>
+    <TopMargin>0.1in</TopMargin>
+    <BottomMargin>0.1in</BottomMargin>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo_bw">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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
+AAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAAEAAAAAAUmdodGxvbmcAAADdAAAABnNsaWNlc1ZsTHMAAAABT2JqYwAAAAEAAAAAAAVzbGljZQAAABIAAAAHc2xpY2VJRGxvbmcAAAAAAAAAB2dyb3VwSURsb25nAAAAAAAAAAZvcmlnaW5lbnVtAAAADEVTbGljZU9yaWdpbgAAAA1hdXRvR2VuZXJhdGVkAAAAAFR5cGVlbnVtAAAACkVTbGljZVR5cGUAAAAASW1nIAAAAAZib3VuZHNPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9uZwAAAAAAAAAAQnRvbWxvbmcAAABAAAAAAFJnaHRsb25nAAAA3QAAAAN1cmxURVhUAAAAAQAAAAAAAG51bGxURVhUAAAAAQAAAAAAAE1zZ2VURVhUAAAAAQAAAAAABmFsdFRhZ1RFWFQAAAABAAAAAAAOY2VsbFRleHRJc0hUTUxib29sAQAAAAhjZWxsVGV4dFRFWFQAAAABAAAAAAAJaG9yekFsaWduZW51bQAAAA9FU2xpY2VIb3J6QWxpZ24AAAAHZGVmYXVsdAAAAAl2ZXJ0QWxpZ25lbnVtAAAAD0VTbGljZVZlcnRBbGlnbgAAAAdkZWZhdWx0AAAAC2JnQ29sb3JUeXBlZW51bQAAABFFU2xpY2VCR0NvbG9yVHlwZQAAAABOb25lAAAACXRvcE91dHNldGxvbmcAAAAAAAAACmxlZnRPdXRzZXRsb25nAAAAAAAAAAxib3R0b21PdXRzZXRsb25nAAAAAAAAAAtyaWdodE91dHNldGxvbmcAAAAAADhCSU0EKAAAAAAADAAAAAE/8AAAAAAAADhCSU0EEQAAAAAAAQEAOEJJTQQUAAAAAAAEAAAAAThCSU0EDAAAAAAI
+UQAAAAEAAACgAAAALgAAAeAAAFZAAAAINQAYAAH/2P/gABBKRklGAAECAABIAEgAAP/tAAxBZG9iZV9DTQAD/+4ADkFkb2JlAGSAAAAAAf/bAIQADAgICAkIDAkJDBELCgsRFQ8MDA8VGBMTFRMTGBEMDAwMDAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAENCwsNDg0QDg4QFA4ODhQUDg4ODhQRDAwMDAwREQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgALgCgAwEiAAIRAQMRAf/dAAQACv/EAT8AAAEFAQEBAQEBAAAAAAAAAAMAAQIEBQYHCAkKCwEAAQUBAQEBAQEAAAAAAAAAAQACAwQFBgcICQoLEAABBAEDAgQCBQcGCAUDDDMBAAIRAwQhEjEFQVFhEyJxgTIGFJGhsUIjJBVSwWIzNHKC0UMHJZJT8OHxY3M1FqKygyZEk1RkRcKjdDYX0lXiZfKzhMPTdePzRieUpIW0lcTU5PSltcXV5fVWZnaGlqa2xtbm9jdHV2d3h5ent8fX5/cRAAICAQIEBAMEBQYHBwYFNQEAAhEDITESBEFRYXEiEwUygZEUobFCI8FS0fAzJGLhcoKSQ1MVY3M08SUGFqKygwcmNcLSRJNUoxdkRVU2dGXi8rOEw9N14/NGlKSFtJXE1OT0pbXF1eX1VmZ2hpamtsbW5vYnN0dXZ3eHl6e3x//aAAwDAQACEQMRAD8A9TrrrprZVUxtddbQ1jGgBrWgbWsY1vta1rVJJJJSkkkxSUukqmT1Xp+LZ6WReyuyJLCdQP5Qb9FEdmYwxjlG1v2cDd6oMtj97c1JTLKyasWk33EhjS0EgEn3EVt0H8pyIFk9XzsS/CyMem1tltTqi9rTMTbX4K2erdNbkfZjkV+tO3bP537m76O/+QkpuJIORlY+LUbcixtVY03OMa/u/wBZCq6r065hsryGOa1zWO11
+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
+4Q9saHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA0LjEtYzAzNiA0Ni4yNzY3MjAsIE1vbiBGZWIgMTkgMjAwNyAyMjo0MDowOCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eGFwPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eGFwTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhhcDpDcmVhdGVEYXRlPSIyMDExLTA0LTA4VDE5OjMyOjQ2KzA3OjAwIiB4YXA6TW9kaWZ5RGF0ZT0iMjAxMS0wNC0wOFQxOTozMjo0NiswNzowMCIgeGFwOk1ldGFkYXRhRGF0ZT0iMjAxMS0wNC0wOFQxOTozMjo0
+NiswNzowMCIgeGFwOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1MzIFdpbmRvd3MiIGRjOmZvcm1hdD0iaW1hZ2UvanBlZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMSIgcGhvdG9zaG9wOkhpc3Rvcnk9IiIgeGFwTU06SW5zdGFuY2VJRD0idXVpZDpDNjBGOUEzNURDNjFFMDExQjlCREVGQ0UzNDM0MzhCOSIgeGFwTU06RG9jdW1lbnRJRD0idXVpZDpDNTBGOUEzNURDNjFFMDExQjlCREVGQ0UzNDM0MzhCOSIgdGlmZjpPcmllbnRhdGlvbj0iMSIgdGlmZjpYUmVzb2x1dGlvbj0iNzIwMDAwLzEwMDAwIiB0aWZmOllSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiIHRpZmY6TmF0aXZlRGlnZXN0PSIyNTYsMjU3LDI1OCwyNTksMjYyLDI3NCwyNzcsMjg0LDUzMCw1MzEsMjgyLDI4MywyOTYsMzAxLDMxOCwzMTksNTI5LDUzMiwzMDYsMjcwLDI3MSwyNzIsMzA1LDMxNSwzMzQzMjtCMzlCODU3MDlERDEyOERBRUM0OTc4OTI3REI3NDQwMCIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjIyMSIgZXhpZjpQaXhlbFlEaW1lbnNpb249IjY0IiBleGlmOkNvbG9yU3BhY2U9Ii0xIiBleGlmOk5hdGl2ZURpZ2VzdD0iMzY4NjQsNDA5NjAsNDA5NjEsMzcxMjEsMzcxMjIsNDA5NjIsNDA5NjMsMzc1MTAsNDA5NjQsMzY4NjcsMzY4NjgsMzM0MzQsMzM0MzcsMzQ4NTAsMzQ4NTIsMzQ4NTUsMzQ4NTYsMzczNzcsMzczNzgsMzczNzksMzczODAsMzczODEsMzczODIsMzczODMsMzczODQsMzczODUs
+MzczODYsMzczOTYsNDE0ODMsNDE0ODQsNDE0ODYsNDE0ODcsNDE0ODgsNDE0OTIsNDE0OTMsNDE0OTUsNDE3MjgsNDE3MjksNDE3MzAsNDE5ODUsNDE5ODYsNDE5ODcsNDE5ODgsNDE5ODksNDE5OTAsNDE5OTEsNDE5OTIsNDE5OTMsNDE5OTQsNDE5OTUsNDE5OTYsNDIwMTYsMCwyLDQsNSw2LDcsOCw5LDEwLDExLDEyLDEzLDE0LDE1LDE2LDE3LDE4LDIwLDIyLDIzLDI0LDI1LDI2LDI3LDI4LDMwOzcwOEVFNzlCMDBBQ0Y5NUVBNTYxRjNFMjBDRDBCNzM4Ij4gPHhhcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InV1aWQ6QzYxODFGMjU3MDJDRTAxMUE4MzBBRDhFOUVGQkIyRTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0idyI/Pv/uAA5BZG9iZQBkAAAAAAD/2wBDAAYEBAQFBAYFBQYJBgUGCQsIBgYICwwKCgsKCgwQDAwMDAwMEAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAALCABAAN0BAREA/90ABAAc/8QA0gAAAAcBAQEBAQAAAAAAAAAABAUDAgYBAAcICQoLEAACAQMDAgQCBgcDBAIGAnMBAgMRBAAFIRIxQVEGE2EicYEUMpGhBxWxQiPBUtHhMxZi8CRygvElQzRTkqKyY3PCNUQnk6OzNhdUZHTD0uIIJoMJChgZhJRFRqS0VtNVKBry4/PE1OT0ZXWFlaW1xdXl9WZ2hpamtsbW5vY3R1dnd4eXp7fH1+f3OEhYaHiImKi4yNjo+Ck5SVlpeYmZqbnJ2en5KjpKWmp6ipqqusra6vr/2gAIAQEAAD8A9U5s2bNmzZs2NDqxIBBK7Gh6HHZs2bNmxvNOfDkOdK8a708aY7NmzZs2bNmzZs//0PVObNmzZs2bNkZ8p/8AHS1//mNb9ZyTZs2bNmyHzf8Ak14P+2Of+ohsOdG80aPrF3eWthKZJbFuE9VKipJFVJ+0Krhvmwn07zRpGo6teaVays95YEidSpC/C3FqN34t8OHGbNmzZs2f/9H1TmzZs2FWt+YLLR4lMwaWaU8YLeMVd29hhVL5u1e3T173QZ4bX9uRXDsq+JXitP8AZHDaTXbQ6JLq1sfXgjjaQAGhPEbq
+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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>id-ID</Language>
+  <rd:ReportID>bcc0deb5-8446-41a5-ada8-0bf47030ee0d</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+</Report>

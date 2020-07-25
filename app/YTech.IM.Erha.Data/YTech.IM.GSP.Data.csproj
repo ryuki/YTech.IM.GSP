@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63E9AECE-3385-44F0-BDF9-4C01DD3C0647}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YTech.IM.GSP.Data</RootNamespace>
+    <AssemblyName>YTech.IM.GSP.Data</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=1.2.0.694, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Inflector.Net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Inflector.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpArch, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\SharpArch.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="NHibernateMaps\Master\MActionCommMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MActionItemMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MAccountCatMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MAccountMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MAccountRefMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MActionCatMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MActionMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MBrandMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MCostCenterMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MCustomerMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MDepartmentMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MEmployeeMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MItemCatMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MItemMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MItemUomMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MPacketItemCatMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MPacketMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MRoomMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MSupplierMap.cs" />
+    <Compile Include="NHibernateMaps\Master\MWarehouseMap.cs" />
+    <Compile Include="NHibernateMaps\Master\RefAddressMap.cs" />
+    <Compile Include="NHibernateMaps\Master\RefPersonMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TAbsentMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TCommissionMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TJournalDetMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TJournalMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TJournalRefMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TRecAccountMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TRecPeriodMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TReferenceMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TStockCardMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TStockItemMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TStockMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TStockRefMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TTransDetItemMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TTransDetMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TTransMap.cs" />
+    <Compile Include="NHibernateMaps\Transaction\TTransRoomMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\MActionCommRepository.cs" />
+    <Compile Include="Repository\MActionItemRepository.cs" />
+    <Compile Include="Repository\MAccountCatRepository.cs" />
+    <Compile Include="Repository\MAccountRefRepository.cs" />
+    <Compile Include="Repository\MAccountRepository.cs" />
+    <Compile Include="Repository\MActionCatRepository.cs" />
+    <Compile Include="Repository\MActionRepository.cs" />
+    <Compile Include="Repository\MBrandRepository.cs" />
+    <Compile Include="Repository\MCostCenterRepository.cs" />
+    <Compile Include="Repository\MCustomerRepository.cs" />
+    <Compile Include="Repository\MDepartmentRepository.cs" />
+    <Compile Include="Repository\MEmployeeRepository.cs" />
+    <Compile Include="Repository\MItemCatRepository.cs" />
+    <Compile Include="Repository\MItemRepository.cs" />
+    <Compile Include="Repository\MItemUomRepository.cs" />
+    <Compile Include="Repository\MPacketItemCatRepository.cs" />
+    <Compile Include="Repository\MPacketRepository.cs" />
+    <Compile Include="Repository\MRoomRepository.cs" />
+    <Compile Include="Repository\MSupplierRepository.cs" />
+    <Compile Include="Repository\MWarehouseRepository.cs" />
+    <Compile Include="Repository\RefAddressRepository.cs" />
+    <Compile Include="Repository\RefPersonRepository.cs" />
+    <Compile Include="Repository\TAbsentRepository.cs" />
+    <Compile Include="Repository\TCommissionRepository.cs" />
+    <Compile Include="Repository\TJournalDetRepository.cs" />
+    <Compile Include="Repository\TJournalRefRepository.cs" />
+    <Compile Include="Repository\TJournalRepository.cs" />
+    <Compile Include="Repository\TRecAccountRepository.cs" />
+    <Compile Include="Repository\TRecPeriodRepository.cs" />
+    <Compile Include="Repository\TReferenceRepository.cs" />
+    <Compile Include="Repository\TStockCardRepository.cs" />
+    <Compile Include="Repository\TStockItemRepository.cs" />
+    <Compile Include="Repository\TStockRefRepository.cs" />
+    <Compile Include="Repository\TStockRepository.cs" />
+    <Compile Include="Repository\TTransDetItemRepository.cs" />
+    <Compile Include="Repository\TTransDetRepository.cs" />
+    <Compile Include="Repository\TTransRefRepository.cs" />
+    <Compile Include="Repository\TTransRepository.cs" />
+    <Compile Include="Repository\TTransRoomRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YTech.IM.Erha.Core\YTech.IM.GSP.Core.csproj">
+      <Project>{7696B4F6-2A10-40C4-A1E2-B9768182588C}</Project>
+      <Name>YTech.IM.GSP.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YTech.IM.Erha.Enums\YTech.IM.GSP.Enums.csproj">
+      <Project>{FF3E8923-CC6D-4531-A5DB-8D1FAF586D4C}</Project>
+      <Name>YTech.IM.GSP.Enums</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NHibernateMaps\AutoPersistenceModelGenerator.cs" />
+    <Compile Include="NHibernateMaps\AutomappingConfiguration.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ForeignKeyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\HasManyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\HasManyToManyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ManyToManyTableNameConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\PrimaryKeyConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\ReferenceConvention.cs" />
+    <Compile Include="NHibernateMaps\Conventions\TableNameConvention.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
